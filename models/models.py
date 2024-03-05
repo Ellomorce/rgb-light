@@ -226,7 +226,16 @@ class FFMLLama2():
         
         data = {
             "model": self.model,
-            "inputs": system,
+            "messages":[
+                {
+                    "role": "system",
+                    "content": system,
+                },
+                {
+                    "role": "user",
+                    "content": text,
+                }
+            ],
             "parameters": {
                 "max_new_tokens": self.max_new_tokens,
                 "temperature": temperature,
