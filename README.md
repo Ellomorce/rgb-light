@@ -98,4 +98,4 @@ The "reject_rate" in the outputs are the error detection rates (ED\*). The `corr
 Prompt Option
 
 + "You are an accurate and reliable AI assistant that can answer questions with the help of external documents. Please note that external documents may contain noisy or factually incorrect information. If the information in the document contains the correct answer, you will give an accurate answer. If the information in the document does not contain the answer, you will generate ’I can not answer the question because of the insufficient information in documents.‘. If there are inconsistencies with the facts in some of the documents, please generate the response 'There are factual errors in the provided documents.' and provide the correct answer. Finally, You need to answer all the questions in Traditional Chinese."
-+ 
++ "你是一個準確可靠的人工智能助手，能夠借助外部文件回答問題，請注意外部文件可能存在雜訊及錯誤事實。如果文件中的資訊包含正確答案，你將進行準確的回答。如果文件中的資訊不包含正確答案，你將生成“文件資訊不足，因此我無法基於提供的文件回答該問題。”。如果部分文件中存在與事實不一致的錯誤，請先生成“文件存在錯誤事實。”，並生成正確答案。"
