@@ -23,14 +23,14 @@ logger.addHandler(file_handler)
 logger.addHandler(stdout_handler)
 #%%
 #Global
-save_result_dir = r'/home/ellomorce/Lab/llm_test/skfh_rgb/eval_result'
-test_noise = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/test.json'
-zh_noise = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/zh.json'
-zh_int = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/zh_int.json'
-zh_fact = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/zh_fact.json'
-skfh_noise = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/skfh.json'
-skfh_int = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/skfh_int.json'
-skfh_fact = r'/home/ellomorce/Lab/llm_test/skfh_rgb/data/skfh_fact.json'
+save_result_dir = r'Your Result Directory Path'
+test_noise = r'Your Data Path'
+zh_noise = r'Your Data Path'
+zh_int = r'Your Data Path'
+zh_fact = r'Your Data Path'
+skfh_noise = r'Your Data Path'
+skfh_int = r'Your Data Path'
+skfh_fact = r'Your Data Path'
 #%%
 def processdata(instance, noise_rate, passage_num, filename, correct_rate = 0):
     query = instance['query']
