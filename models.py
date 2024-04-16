@@ -21,9 +21,9 @@ logger.addHandler(stdout_handler)
 #%%
 class FFMLLama2:
     def __init__(self, switch_zh_hans=False) -> None:
-        self.api_key="af13849c-85d7-4ccf-8879-89c58052ea78"
-        self.model_name="ffm-llama2-70b-chat-exp"
-        self.api_url="https://57729.afs.twcc.ai/text-generation"
+        self.api_key="YOUR API KEY"
+        self.model_name="YOUR MODEL NAME"
+        self.api_url="YOUR MODEL URL"
         self.max_new_tokens=2048
         self.temperature=0.5
         self.top_k=50
@@ -71,30 +71,15 @@ class FFMLLama2:
         return res
 #%%
 class AzureGPT35:
-    """
-    key1
-    33579d1535d046d4a3ae2655027f2445
 
-    key2
-    6a5103d27e3d44f19342e52a79426e17
-
-    Endpoint
-    https://azheopenai.openai.azure.com/
-
-    model_name
-    gpt-35-turbo-16k
-    gpt-35-turbo-instruct
-    gpt-4-32k
-    text-embedding-ada-002
-    """
     def __init__(self) -> None:
         self.client = AzureOpenAI(
-            api_key="31db5c7e68a4454ba8e3082918804ea2",
-            api_version="2023-05-15",
-            azure_endpoint="https://skfh-aoai.openai.azure.com/",
+            api_key="YOUR API KEY",
+            api_version="YOUR MODEL VERSION",
+            azure_endpoint="YOUR MODEL URL",
             default_headers= {"conten-type": "application/json"}
         )
-        self.model="gpt-35-turbo-16k"
+        self.model="YOUR MODEL NAME"
         self.temperature = 0.5
         self.top_p = 1.0
         self.frequency_penalty = 1.0
@@ -124,7 +109,7 @@ class AzureGPT35:
 #%%
 class BreeXe8x7b:
     def __init__(self) -> None:
-        self.model = "BreeXe-8x7B"
+        self.model = "YOUR MODEL NAME"
         self.temperature = 0.5
         self.top_p = 1.0
         self.max_tokens=512
@@ -132,8 +117,8 @@ class BreeXe8x7b:
     def conversation(self, system, text):
 
         client = OpenAI(
-            base_url= "https://api-mtkresearch.com/v1/",
-            api_key=""
+            base_url= "YOUR MODEL URL",
+            api_key="YOUR API KEY"
         )
 
         message = [
@@ -158,7 +143,7 @@ class BreeXe8x7b:
 #%%
 class Breeze7b:
     def __init__(self) -> None:
-        self.model = "Repository/breeze7gguf/breeze-7b-instruct-v1_0-q6_k.gguf"
+        self.model = "YOUR MODEL NAME"
         self.temperature = 0.5
         self.top_p = 1.0
         self.max_tokens=512
@@ -166,8 +151,8 @@ class Breeze7b:
     def conversation(self, system, text):
 
         client = OpenAI(
-            base_url= "https://localhost:1234/v1",
-            api_key=""
+            base_url= "YOUR MODEL URL",
+            api_key="YOUR API KEY"
         )
 
         message = [
